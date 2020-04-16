@@ -7,17 +7,31 @@ A secure, fast, and convenient way for users to log into your app, and for your 
 * **CodeIgniter Web Framework**
 -- [x] CodeIgniter is a powerful PHP framework with a very small footprint, built for developers who need a simple and elegant toolkit to create full-featured web applications.
 [CodeIgniter Download Link](https://codeigniter.com/)
-* **Google Developer App**
--- [x] Every third party app that integrates Google login needs to create a Google developer app. A developer app helps Google track the third party app and provides additional configuration options.
+* **Google API Console Project**
+-- [x] Every third party app that integrates Google login needs to create a Google API Console Project. A console project helps Google track the third party app and provides additional configuration options.
 [Build anything with Google](https://developers.google.com/docs/api)
 ### Step 1. **Download and Install XAMPP**
-### Step 2. **Creating a Google Developer App**
-*********************************************************
+### Step 2. **Creating Google API Console Project**
+* Go to the Google API Console.
+* Select an existing project from the projects list, or click NEW PROJECT to create a new project:
+** Enter the Project Name.
+** Under the Project Name, you will see the Google API console automatically creates a project ID. Optionally you can change this project ID by the Edit link. But project ID must be unique worldwide.
+** Click on the CREATE button and the project will be created in some seconds.
+* In the left side navigation panel, select Credentials under the APIs & Services section.
+* Select the OAuth consent screen tab, specify the consent screen settings.
+** In Application name field, enter the name of your Application.
+** In Support email filed, choose an email address for user support.
+** In the Authorized domains, specify the domains which will be allowed to authenticate using OAuth.
+** Click the Save button.
+* Select the Credentials tab, click the Create credentials drop-down and select OAuth client ID.
+** In the Application type section, select Web application.
+** In the Authorized redirect URIs field, enter the redirect URL.
+** Click the Create button & note the Client ID.
 ### Step 3. **Creating a CodeIgniter App**
 * Clone https://github.com/16anands/Google-Login-with-CodeIgniter.git 
 * Place it in _**C:\xampp\htdocs**_
 * Open  C:\xampp\htdocs\Google-Login-with-CodeIgniter-v1.0.0\app\Views\home.php
-* Replace **'Client ID'** with your google _**client_id**_.
+* Replace **'CLIENT ID'** with your google _**client_id**_.
 * Open web browser and type _[http://localhost/Google-Login-with-CodeIgniter-v1.0.0/public/]
 * Click _**Sign in With Google**_ button.
 * Enter your Credentials which you used to create the Developer Account on Google.
@@ -136,6 +150,6 @@ A secure, fast, and convenient way for users to log into your app, and for your 
 </body>
 </html>
 ```
-* Replace **'Client ID'** with your google _**client_id**_.
+* Replace **'CLIENT ID'** with your google _**client_id**_.
 * Refresh the web page and Click _**Sign in With Google**_ button.
 * Enter your Credentials which you used to create the Developer Account on Google.
