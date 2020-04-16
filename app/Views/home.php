@@ -5,7 +5,7 @@
 	<title>Google Login with CodeIgniter 4!</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-signin-scope" content="profile email">
-    <meta name="google-signin-client_id" content="218510653429-fr3oju28p86sbrucgbrosh60289mk2rm.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="CLIENT ID">
     <script src="https://apis.google.com/js/platform.js" async defer></script>
 	<!-- STYLES -->
 	<style {csp-style-nonce}>
